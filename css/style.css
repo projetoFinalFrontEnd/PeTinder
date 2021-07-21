@@ -11,6 +11,8 @@ html{
     box-sizing: border-box;
 }
 
+
+/* ----------------- MENU LATERAL  ----------------- */
 header{
     padding: 3rem;
     background-color: rgb(235, 219, 217);
@@ -46,17 +48,14 @@ header{
     
 }
 
-#checkbox{
+#checkbox-menu-lateral{
     display: none;
     
 }
 
+/* Início dos estilos aplicados quando o checkbox estiver ativo */
 
-#checkbox:checked ~.menu-lateral{
-    transform: translateX(137.6%);
-}
-
-#checkbox:checked ~ .label-menu{
+#checkbox-menu-lateral:checked ~ .label-menu{
     animation: labelMenuChecked .7s;
 }
 
@@ -80,29 +79,35 @@ header{
     
 }
 
-#checkbox:checked ~.menu-lateral .nav-menu-lateral ul .nav-li1{
+#checkbox-menu-lateral:checked ~.menu-lateral{
+    transform: translateX(137.6%);
+}
+
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li1{
     margin-top: 0;
     transition: margin-top .3s ease-in-out;
 }
-#checkbox:checked ~.menu-lateral .nav-menu-lateral ul .nav-li2{
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li2{
     margin-top: 0;
     transition: margin-top .5s ease-in-out;
 }
-#checkbox:checked ~.menu-lateral .nav-menu-lateral ul .nav-li3{
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li3{
     margin-top: 0;
     transition: margin-top .7s ease-in-out;
 }
-#checkbox:checked ~.menu-lateral .nav-menu-lateral ul .nav-li4{
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li4{
     margin-top: 0;
     transition: margin-top .9s ease-in-out;
 }
-#checkbox:checked ~.menu-lateral .nav-menu-lateral ul .nav-li5{
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li5{
     margin-top: 0;
     transition: margin-top 1.1s ease-in-out;
 }
-#checkbox:checked ~.menu-lateral .nav-menu-lateral .div-imagem-perfil{
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral .div-imagem-perfil{
     transform: translateX(103%);
 }
+
+/* Fim dos estilos aplicados quando o checkbox estiver ativo */
 
 .menu-lateral{
     position: absolute;
@@ -193,4 +198,255 @@ header{
     width: 12rem;
     height: 12rem;
 
+}
+
+
+
+/* ----------------- PETS CONTAINER  ----------------- */
+
+
+
+.checkbox-label{
+    display: none;
+}
+
+.resumo-pets-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
+    gap: 2rem;
+    justify-content: center;
+    margin: 5rem 2rem;
+}
+
+.label-resumo-pets{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0;
+    gap: .5rem;
+    box-shadow: 0.3rem 0.3rem 1rem black;
+    width: 11rem;
+    height: 15rem;
+    transition: width .2s, height .2s;
+    overflow: hidden;
+}
+
+.label-resumo-pets img{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid black;
+}
+
+.div-resumo-pets{
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.div-resumo-pets p{
+    width: 9rem;
+    margin: auto;
+}
+
+
+/* imagem1 */
+
+#checkbox-label1:checked ~.label1{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label1:checked ~.label1 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label1:checked ~.label1 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* imagem2 */
+
+#checkbox-label2:checked ~.label2{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label2:checked ~.label2 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label2:checked ~.label2 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* imagem3 */
+
+#checkbox-label3:checked ~.label3{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label3:checked ~.label3 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label3:checked ~.label3 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* imagem4 */
+
+#checkbox-label4:checked ~.label4{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label4:checked ~.label4 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label4:checked ~.label4 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* imagem5 */
+
+#checkbox-label5:checked ~.label5{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label5:checked ~.label5 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label5:checked ~.label5 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* imagem6 */
+
+
+#checkbox-label6:checked ~.label6{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    left: -3rem;
+    top:-8rem;
+    width: 30rem;
+    height: 95vh;
+    padding: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:1rem;
+    /* transition: width .2s, height .2s; */
+}
+
+#checkbox-label6:checked ~.label6 img{
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+#checkbox-label6:checked ~.label6 .div-resumo-pets p{
+    height: 40vh;
+    width: 100%;
+}
+
+/* fim da imagem6 */
+.buttons-resumo-pets{
+    display: flex;
+    gap:2rem;
+}
+
+.btn-vermais{
+    border:none;
+    width:7rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: teal;
+    cursor:pointer;
+}
+
+.btn-adotar{
+    border:none;
+    width:17rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: rgb(216, 137, 137);
+    cursor:pointer;
 }
