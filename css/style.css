@@ -9,18 +9,24 @@ html{
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: ‘Raleway’, sans-serif;
 }
 
+:root{
+    --color-purple:rgb(93, 74, 166);
+    --color-red:rgb(187, 42, 48);
+    --color-yellow:rgb(242, 195, 67);
+}
 
 /* ----------------- MENU LATERAL  ----------------- */
 header{
     padding: 3rem;
     background-color: rgb(235, 219, 217);
-    width: 110%;
+    width: 100%;
     display: flex;
     align-items: center;
-
-
+    position: absolute;
+    z-index: 3;
 }
 
 .label-menu{
@@ -115,7 +121,7 @@ header{
     left: -135%;
     bottom: 0;
     background-color: rgb(123, 218, 218);
-    height: 110%;
+    height: 100%;
     width: 90%;
     border-right: .2rem solid rgb(255, 255, 255); 
     transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
@@ -449,4 +455,209 @@ header{
     border-radius: 1rem;
     background-color: rgb(216, 137, 137);
     cursor:pointer;
+
 }
+
+
+
+/* ----------------------------- */
+
+.home{
+    background-color: var(--color-red);
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(../imgs/tela1/celuBackg\ \(1\).png); */
+    /* background-size:cover; */
+    /* background-color: rgb(171, 38, 43); */
+    padding-top: 10rem;
+    position:absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.img-cachorro{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 17rem;
+    height: 17rem;
+}
+
+.vazio{
+    height: 100vh;
+}
+.match{
+    background-color: #fff;
+    height: 100%;
+    border-top: 4rem solid var(--color-purple);
+}
+
+.match h2{
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.imagem-pet{
+    width: 20rem;
+    height: 40rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 1rem var(--color-purple);
+}
+
+
+
+.flex-imagem-pet{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.imagem-pet img{
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+
+.nome-pet{
+    color: var(--color-purple);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.descricao-pet{
+    border:none;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-purple);
+}
+
+.div-nome-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    padding: 2rem;
+}
+
+.sobre{
+    background-color: var(--color-yellow);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-sobre{
+    height: 30%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.texto-sobre p{
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.texto-sobre h2{
+color: var(--color-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+iframe{
+    height: 40%;
+    width: 100%;
+}
+
+.sobre img{
+    width: 27rem;
+    height: 30%;
+    margin: auto;
+}
+
+
+.contato{
+    background-color: rgb(255, 72, 0);
+    height: 100vh;
+}
+.login{
+    background-color: rgb(220, 61, 251);
+    height: 100vh;
+}
+.cadastro{
+    background-color: rgb(250, 160, 152);
+    height: 100vh;
+}
+
+.div-imgs-home-logo{
+    height: 40vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+}
+
+.div-imgs-home-logo p{
+    color: rgba(255, 255, 255, 0.753);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    
+}
+.div-imgs-home-logo img{
+    width: 11rem;
+    height: 11rem;
+
+}
+.div-imgs-home-logo h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.div-home-button{
+    margin-top: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.div-home-button button{
+    width: 70%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.btn-home-saibamais{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.btn-home-match{
+    background-color: #fff;
+    color: ;
+    border: none;
+}
+/* .img-cachorro{
+    width: 100%;
+    height: 67.6vh;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../imgs/tela1/celuBackg.png);
+    background-repeat: no-repeat;
+    
+} */
