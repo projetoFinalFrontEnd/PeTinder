@@ -35,7 +35,7 @@ html{
 
 header{
     padding: 3rem;
-    background-color: rgb(235, 219, 217);
+    background-color: var(--color-red);
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ header{
     top: 0;
     left: -135%;
     bottom: 0;
-    background-color: rgb(123, 218, 218);
+    background-color: var(--color-yellow);
     height: 100vh;
     width: 90%;
     border-right: .2rem solid rgb(255, 255, 255); 
@@ -117,21 +117,23 @@ header{
     gap: 2rem;
     width: 100%;
     height: 8rem;
-    padding: 0 6rem;
+    padding: 0 6rem 0 5rem;
     align-items: center;
     margin-top: 5.9rem;
-    background-color: rgb(243, 144, 144);
+    background-color: var(--color-purple);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
     border-radius: 5% / 1rem;
-    border-bottom: .2rem solid #fff;
+    /* border-bottom: .2rem solid #fff; */
     margin-left: -100%;
     transition: transform 1s ease-in-out;
 }
 
 .foto-perfil{
-    width: 3rem;
-    height: 3rem;
-    border: 1px solid rgba(37, 42, 42, 0.432);
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
+    background-color: #fff;
 }
 
 .nome-usuario{
@@ -140,14 +142,14 @@ header{
     font-weight: bold;
 }
 
-/* .nav-imagem-pets{
+.nav-imagem-pets{
     display: none;
     width: 15rem;
     height: 27rem;
     position: absolute;
     right: -9.6rem;
     top: 20rem
-} */
+}
 
 .div-imagem-pets-logo{
     width: 100%;
@@ -159,11 +161,6 @@ header{
     align-items: center;
 }
 
-.nav-imagem-pets{
-    width: 12rem;
-    height: 12rem;
-
-}
 .nav-imagem-logo{
     width: 20rem;
     height: 7rem;
@@ -250,257 +247,6 @@ header{
     height: 100vh;
 }
 
-/* ----------------- PETS CONTAINER  ----------------- */
-
-/* 
-
-.checkbox-label{
-    display: none;
-}
-
-.resumo-pets-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
-    gap: 2rem;
-    justify-content: center;
-    margin: 5rem 2rem;
-}
-
-.label-resumo-pets{
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: .5rem 0;
-    gap: .5rem;
-    box-shadow: 0.3rem 0.3rem 1rem black;
-    width: 11rem;
-    height: 15rem;
-    transition: width .2s, height .2s;
-    overflow: hidden;
-}
-
-.label-resumo-pets img{
-    width: 10rem;
-    height: 10rem;
-    border: 2px solid black;
-}
-
-.div-resumo-pets{
-
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.div-resumo-pets p{
-    width: 9rem;
-    margin: auto;
-}
-
-
-/* imagem1 */
-/* 
-#checkbox-label1:checked ~.label1{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem;
-    /* transition: width .2s, height .2s;
-}
-
-#checkbox-label1:checked ~.label1 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label1:checked ~.label1 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* imagem2 */
-
-/* #checkbox-label2:checked ~.label2{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem; */
-    /* transition: width .2s, height .2s; */
-/* }
-
-#checkbox-label2:checked ~.label2 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label2:checked ~.label2 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* imagem3 */
-
-/* #checkbox-label3:checked ~.label3{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem; */
-    /* transition: width .2s, height .2s; */
-/* }
-
-#checkbox-label3:checked ~.label3 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label3:checked ~.label3 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* imagem4 */
-
-/* #checkbox-label4:checked ~.label4{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem; */
-    /* transition: width .2s, height .2s; */
-/* }
-
-#checkbox-label4:checked ~.label4 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label4:checked ~.label4 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* imagem5 */
-
-/* #checkbox-label5:checked ~.label5{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem; */
-    /* transition: width .2s, height .2s; */
-/* }
-
-#checkbox-label5:checked ~.label5 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label5:checked ~.label5 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* imagem6 */
-
-
-/* #checkbox-label6:checked ~.label6{
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    left: -3rem;
-    top:-8rem;
-    width: 30rem;
-    height: 95vh;
-    padding: 3rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius:1rem; */
-    /* transition: width .2s, height .2s; */
-/* }
-
-#checkbox-label6:checked ~.label6 img{
-    width: 90%;
-    height: 20rem;
-    border: none;
-}
-
-#checkbox-label6:checked ~.label6 .div-resumo-pets p{
-    height: 40vh;
-    width: 100%;
-} */
-
-/* fim da imagem6 */
-/* .buttons-resumo-pets{
-    display: flex;
-    gap:2rem;
-}
-
-.btn-vermais{
-    border:none;
-    width:7rem;
-    padding: .5rem;
-    border-radius: 1rem;
-    background-color: teal;
-    cursor:pointer;
-}
-
-.btn-adotar{
-    border:none;
-    width:17rem;
-    padding: .5rem;
-    border-radius: 1rem;
-    background-color: rgb(216, 137, 137);
-    cursor:pointer;
-
-} */
-
-
 
 /* ----------------------- MAIN ------------------------------------------------------------- */
 
@@ -562,11 +308,13 @@ header{
     background-color: transparent;
     border: 1px solid #fff;
     color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
 }
 
 .btn-home-match{
     background-color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 .img-cachorro{
@@ -606,7 +354,7 @@ header{
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     justify-items: center;
     gap: 3rem;
-    padding: 4rem;
+    padding: 4rem 0 4rem 0;
 }
 
 .imagem-pet{
@@ -614,6 +362,7 @@ header{
     height: 40rem;
     border-radius: 1rem;
     box-shadow: .1rem .1rem 1rem var(--color-purple);
+    background-color: #fff;
 }
 
 .imagem-pet img{
@@ -642,28 +391,800 @@ header{
     width: 5rem;
     height: 5rem;
     background-color: var(--color-purple);
+    cursor: pointer;
 }
+
+.div-nome-button p, .idade-pet, .raca-pet, .vacina-pet{
+    opacity: 0;
+    text-indent: -9999px;
+}
+.div-btn-adotar{
+    opacity: 0;
+}
+
 
 /* início da div individual de cada pet */
 
 .pet-beto{
-    
+    overflow: hidden;
+    transition: width .5s, height .5s;
 }
-.pet-tonho{
-    
+
+
+/* início do modal pet Beto */
+
+.modal-pet-beto{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
 }
-.pet-amora{
-    
+.modal-pet-beto img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
 }
-.pet-robert{
-    
+
+.modal-pet-beto .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
 }
-.pet-sol{
-    
+.modal-pet-beto .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
 }
-.pets-kevin-roger{
+.modal-pet-beto .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-beto .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-beto .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-beto .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pet-beto .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
 }
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+}
+.modal-pet-beto .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pet Beto */
+
+
+.pet-tonho{
+    overflow: hidden;
+    transition: width .5s, height .5s;
+}
+
+
+/* início do modal pet Tonho */
+
+.modal-pet-tonho{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
+}
+.modal-pet-tonho img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
+}
+
+.modal-pet-tonho .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+}
+.modal-pet-tonho .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.modal-pet-tonho .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-tonho .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-tonho .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-tonho .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pet-tonho .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+
+}
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.modal-pet-tonho .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pet Tonho */
+
+.pet-amora{
+    overflow: hidden;
+    transition: width .5s, height .5s;
+}
+
+
+/* início do modal pet Amora */
+
+.modal-pet-amora{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
+}
+.modal-pet-amora img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
+}
+
+.modal-pet-amora .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+}
+.modal-pet-amora .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.modal-pet-amora .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-amora .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-amora .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-amora .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pet-amora .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+
+}
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.modal-pet-amora .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pet Amora */
+
+
+
+.pet-robert{
+    overflow: hidden;
+    transition: width .5s, height .5s;
+}
+
+
+
+/* início do modal pet Robert */
+
+.modal-pet-robert{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
+}
+.modal-pet-robert img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
+}
+
+.modal-pet-robert .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+}
+.modal-pet-robert .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.modal-pet-robert .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-robert .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-robert .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-robert .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pet-robert .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+
+}
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+}
+.modal-pet-robert .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pet Robert */
+
+
+
+.pet-sol{
+    overflow: hidden;
+    transition: width .5s, height .5s;
+}
+
+
+/* início do modal pet Sol */
+
+.modal-pet-sol{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
+}
+.modal-pet-sol img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
+}
+
+.modal-pet-sol .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+}
+.modal-pet-sol .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.modal-pet-sol .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-sol .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-sol .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pet-sol .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pet-sol .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+
+}
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+}
+.modal-pet-sol .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pet Sol */
+
+
+
+
+.pets-kevin-roger{
+    overflow: hidden;
+    transition: width .5s, height .5s;
+}
+
+/* início do modal pets Kevin & Roger */
+
+.modal-pets-kevin-roger{
+    width: 90%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 95vh;
+    transition: width .5s, height .5s;
+}
+.modal-pets-kevin-roger img{
+    width: 100%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%); */
+    height: 50vh;
+}
+
+.modal-pets-kevin-roger .div-nome-button{
+    flex-direction: column;
+    align-items: flex-start;
+    height: 30vh;
+}
+.modal-pets-kevin-roger .div-nome-button .nome-pet{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+.modal-pets-kevin-roger .div-nome-button .idade-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pets-kevin-roger .div-nome-button .vacina-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pets-kevin-roger .div-nome-button .raca-pet{
+    font-size: 1.6rem;
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+}
+.modal-pets-kevin-roger .div-nome-button .descricao-pet{
+    display: none;
+}
+.modal-pets-kevin-roger .div-nome-button p{
+    opacity: 1;
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    padding: 1rem 0 ;
+    text-indent: 0;
+}
+
+
+.btn-veroutro{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-adotar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+
+}
+.btn-veroutro:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
+.btn-adotar{
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    background-color: var(--color-red);
+    border: 1px solid var(--color-red);
+    color: rgba(255, 255, 255, 0.719);
+    cursor: pointer;
+}
+
+.btn-home-match{
+    background-color: #fff;
+    border: none;
+}
+.modal-pets-kevin-roger .div-btn-adotar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    opacity: 1;
+}
+
+
+
+/* fim do modal pets Kevin & Roger */
+
+
+
 
 /* fim da div individual de cada pet */
 
@@ -789,6 +1310,7 @@ form input {
     padding: 1rem;
     margin: 1rem;
     width: 10rem;
+    cursor:pointer;
 }
 
 .btn-contato-limpar {
@@ -799,6 +1321,7 @@ form input {
     padding: 1rem;
     margin: 1rem;
     width: 10rem;
+    cursor:pointer;
 }
 
 
@@ -849,18 +1372,9 @@ footer {
     height: 2.5rem;
     width: 2.5rem;
     margin: 1rem;
+    cursor:pointer;
 }
 
 
 
 
-
-/* .img-cachorro{
-    width: 100%;
-    height: 67.6vh;
-    position: absolute;
-    bottom: 0;
-    background-image: url(../imgs/tela1/celuBackg.png);
-    background-repeat: no-repeat;
-    
-} */
