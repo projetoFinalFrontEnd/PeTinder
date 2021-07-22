@@ -1,8 +1,11 @@
+/* ----------------- Scroll Smooth e Fonte Size default  ----------------- */
+
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
+/* ----------------- RESET  ----------------- */
 *{
     margin: 0;
     padding: 0;
@@ -12,13 +15,21 @@ html{
     font-family: ‘Raleway’, sans-serif;
 }
 
+/* ----------------- VARIÁVEIS  ----------------- */
 :root{
     --color-purple:rgb(93, 74, 166);
     --color-red:rgb(187, 42, 48);
     --color-yellow:rgb(242, 195, 67);
 }
 
+
+
+
+/* ----------------------- HEADER ------------------------------------------------------------- */
+
+
 /* ----------------- MENU LATERAL  ----------------- */
+
 header{
     padding: 3rem;
     background-color: rgb(235, 219, 217);
@@ -54,66 +65,7 @@ header{
     
 }
 
-#checkbox-menu-lateral{
-    display: none;
-    
-}
 
-/* Início dos estilos aplicados quando o checkbox estiver ativo */
-
-#checkbox-menu-lateral:checked ~ .label-menu{
-    animation: labelMenuChecked .7s;
-}
-
-
-@keyframes labelMenuChecked {
-    20%{
-        transform:translateX(-50rem);
-    }
-    40%{
-        transform:translateY(-100rem);
-    }
-    60%{
-        transform:translateX(+200rem);
-    }    
-    80%{
-        transform:translateY(0);
-    }
-    100%{
-        transform:translateX(0%);
-    }
-    
-}
-
-#checkbox-menu-lateral:checked ~.menu-lateral{
-    transform: translateX(137.6%);
-}
-
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li1{
-    margin-top: 0;
-    transition: margin-top .3s ease-in-out;
-}
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li2{
-    margin-top: 0;
-    transition: margin-top .5s ease-in-out;
-}
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li3{
-    margin-top: 0;
-    transition: margin-top .7s ease-in-out;
-}
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li4{
-    margin-top: 0;
-    transition: margin-top .9s ease-in-out;
-}
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li5{
-    margin-top: 0;
-    transition: margin-top 1.1s ease-in-out;
-}
-#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral .div-imagem-perfil{
-    transform: translateX(103%);
-}
-
-/* Fim dos estilos aplicados quando o checkbox estiver ativo */
 
 .menu-lateral{
     position: absolute;
@@ -121,7 +73,7 @@ header{
     left: -135%;
     bottom: 0;
     background-color: rgb(123, 218, 218);
-    height: 100%;
+    height: 100vh;
     width: 90%;
     border-right: .2rem solid rgb(255, 255, 255); 
     transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
@@ -194,23 +146,110 @@ header{
     top: 20rem
 } */
 
-.div-imagem-pets{
-    width: 110%;
+.div-imagem-pets-logo{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 0 1rem 3rem;
+    margin-top: 3rem;
+    align-items: center;
 }
+
 .nav-imagem-pets{
     width: 12rem;
     height: 12rem;
 
 }
+.nav-imagem-logo{
+    width: 20rem;
+    height: 7rem;
+
+}
+
+#checkbox-menu-lateral{
+    display: none;
+    
+}
+
+/* Início dos estilos aplicados quando o checkbox estiver ativo */
+
+#checkbox-menu-lateral:checked ~ .label-menu{
+    animation: labelMenuChecked .7s;
+}
 
 
+@keyframes labelMenuChecked {
+    20%{
+        transform:translateX(-50rem);
+    }
+    40%{
+        transform:translateY(-100rem);
+    }
+    60%{
+        transform:translateX(+200rem);
+    }    
+    80%{
+        transform:translateY(0);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+    
+}
+
+#checkbox-menu-lateral:checked ~.menu-lateral{
+    transform: translateX(137.6%);
+}
+
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li1{
+    margin-top: 0;
+    transition: margin-top .3s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li2{
+    margin-top: 0;
+    transition: margin-top .5s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li3{
+    margin-top: 0;
+    transition: margin-top .7s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li4{
+    margin-top: 0;
+    transition: margin-top .9s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li5{
+    margin-top: 0;
+    transition: margin-top 1.1s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral ul .nav-li6{
+    margin-top: 0;
+    transition: margin-top 1.3s ease-in-out;
+}
+#checkbox-menu-lateral:checked ~.menu-lateral .nav-menu-lateral .div-imagem-perfil{
+    transform: translateX(103%);
+}
+
+/* Fim dos estilos aplicados quando o checkbox estiver ativo */
+
+
+/* ----------------- LOGIN ----------------- */
+
+.login{
+    background-color: rgb(220, 61, 251);
+    height: 100vh;
+}
+
+/* ----------------- CADASTRO ----------------- */
+
+.cadastro{
+    background-color: rgb(250, 160, 152);
+    height: 100vh;
+}
 
 /* ----------------- PETS CONTAINER  ----------------- */
 
-
+/* 
 
 .checkbox-label{
     display: none;
@@ -259,7 +298,7 @@ header{
 
 
 /* imagem1 */
-
+/* 
 #checkbox-label1:checked ~.label1{
     position: absolute;
     z-index: 2;
@@ -273,7 +312,7 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius:1rem;
-    /* transition: width .2s, height .2s; */
+    /* transition: width .2s, height .2s;
 }
 
 #checkbox-label1:checked ~.label1 img{
@@ -285,11 +324,11 @@ header{
 #checkbox-label1:checked ~.label1 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* imagem2 */
 
-#checkbox-label2:checked ~.label2{
+/* #checkbox-label2:checked ~.label2{
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -301,9 +340,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:1rem;
+    border-radius:1rem; */
     /* transition: width .2s, height .2s; */
-}
+/* }
 
 #checkbox-label2:checked ~.label2 img{
     width: 90%;
@@ -314,11 +353,11 @@ header{
 #checkbox-label2:checked ~.label2 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* imagem3 */
 
-#checkbox-label3:checked ~.label3{
+/* #checkbox-label3:checked ~.label3{
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -330,9 +369,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:1rem;
+    border-radius:1rem; */
     /* transition: width .2s, height .2s; */
-}
+/* }
 
 #checkbox-label3:checked ~.label3 img{
     width: 90%;
@@ -343,11 +382,11 @@ header{
 #checkbox-label3:checked ~.label3 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* imagem4 */
 
-#checkbox-label4:checked ~.label4{
+/* #checkbox-label4:checked ~.label4{
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -359,9 +398,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:1rem;
+    border-radius:1rem; */
     /* transition: width .2s, height .2s; */
-}
+/* }
 
 #checkbox-label4:checked ~.label4 img{
     width: 90%;
@@ -372,11 +411,11 @@ header{
 #checkbox-label4:checked ~.label4 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* imagem5 */
 
-#checkbox-label5:checked ~.label5{
+/* #checkbox-label5:checked ~.label5{
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -388,9 +427,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:1rem;
+    border-radius:1rem; */
     /* transition: width .2s, height .2s; */
-}
+/* }
 
 #checkbox-label5:checked ~.label5 img{
     width: 90%;
@@ -401,12 +440,12 @@ header{
 #checkbox-label5:checked ~.label5 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* imagem6 */
 
 
-#checkbox-label6:checked ~.label6{
+/* #checkbox-label6:checked ~.label6{
     position: absolute;
     z-index: 2;
     background-color: #fff;
@@ -418,9 +457,9 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:1rem;
+    border-radius:1rem; */
     /* transition: width .2s, height .2s; */
-}
+/* }
 
 #checkbox-label6:checked ~.label6 img{
     width: 90%;
@@ -431,10 +470,10 @@ header{
 #checkbox-label6:checked ~.label6 .div-resumo-pets p{
     height: 40vh;
     width: 100%;
-}
+} */
 
 /* fim da imagem6 */
-.buttons-resumo-pets{
+/* .buttons-resumo-pets{
     display: flex;
     gap:2rem;
 }
@@ -456,256 +495,23 @@ header{
     background-color: rgb(216, 137, 137);
     cursor:pointer;
 
-}
+} */
 
 
 
-/* ----------------------------- */
+/* ----------------------- MAIN ------------------------------------------------------------- */
+
+
+/* ----------------- SECTION HOME ----------------- */
 
 .home{
     background-color: var(--color-red);
     height: 100%;
     width: 100%;
-    /* background-image: url(../imgs/tela1/celuBackg\ \(1\).png); */
-    /* background-size:cover; */
-    /* background-color: rgb(171, 38, 43); */
     padding-top: 6rem;
     position:absolute;
     top: 0;
     z-index: 0;
-}
-
-.img-cachorro{
-    position: absolute;
-    bottom:0;
-    right: 0;
-    width: 17rem;
-    height: 17rem;
-}
-
-.vazio{
-    height: 100vh;
-}
-.match{
-    background-color: #fff;
-    height: 100%;
-    border-top: 4rem solid var(--color-purple);
-}
-
-.match h2{
-    color: var(--color-purple);
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.imagem-pet{
-    width: 20rem;
-    height: 40rem;
-    border-radius: 1rem;
-    box-shadow: .1rem .1rem 1rem var(--color-purple);
-}
-
-
-
-.flex-imagem-pet{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    gap: 3rem;
-    padding: 4rem;
-}
-
-.imagem-pet img{
-    width: 100%;
-    height: 70%;
-    border-radius: 1rem;
-}
-
-.nome-pet{
-    color: var(--color-purple);
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.descricao-pet{
-    border:none;
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    background-color: var(--color-purple);
-}
-
-.div-nome-button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30%;
-    padding: 2rem;
-}
-
-.sobre{
-    background-color: var(--color-yellow);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.texto-sobre{
-    height: 30%;
-    margin: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
-.texto-sobre p{
-    color: var(--color-purple);
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-}
-
-.texto-sobre h2{
-color: var(--color-purple);
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-iframe{
-    width: 100%;
-}
-
-.sobre img{
-    width: 27rem;
-    height: 30%;
-    margin: auto;
-}
-
-
-.contato{
-    background-color: white;
-    height: 100%;
-}
-
-.contato h2 {
-    color: var(--color-purple);
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    color: var(--color-purple);
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-label {
-    margin: 1rem;
-}
-
-input {
-    border: none;
-    border-bottom: 1.5px solid var(--color-purple);
-    border-radius: 5%;
-    margin: 1rem;
-}
-
-.form-contato-img {
-    display: flex;
-    flex-direction: column-reverse;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: .1rem .1rem 1rem #696969;
-    gap: 3rem;
-    margin: 2rem;
-}
-
-.form-contato-img img {
-    width: 100%;
-}
-
-.buttons-contato {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.contato-enviar {
-    background-color: var(--color-purple);
-    border: 1px solid var(--color-purple);
-    border-radius: 2rem;
-    color: white;
-    padding: 1rem;
-    margin: 1rem;
-    width: 10rem;
-}
-
-.contato-limpar {
-    background-color: transparent;
-    border: 1px solid var(--color-purple);
-    border-radius: 2rem;
-    color: var(--color-purple);
-    padding: 1rem;
-    margin: 1rem;
-    width: 10rem;
-}
-
-footer {
-    background-color: var(--color-purple);
-    padding: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-}
-.footer-menu-link {
-    color: rgba(255, 255, 255, 0.582);
-    display: flex;
-    flex-direction: column;
-    padding: .4rem;
-    font-size: 1.6rem;
-}
-
-.footer-copyright {
-    color: rgba(255, 255, 255, 0.582);
-    display: flex;
-    flex-direction: column;
-    padding: .4rem;
-    font-size: 1.6rem;
-}
-
-.redes-sociais-site {
-    color: rgba(255, 255, 255, 0.582);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: .4rem;
-    font-size: 1.6rem;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.redes-sociais-site img {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: 1rem;
-}
-
-.login{
-    background-color: rgb(220, 61, 251);
-    height: 100vh;
-}
-.cadastro{
-    background-color: rgb(250, 160, 152);
-    height: 100vh;
 }
 
 .div-imgs-home-logo{
@@ -759,6 +565,291 @@ footer {
     background-color: #fff;
     border: none;
 }
+
+.img-cachorro{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 17rem;
+    height: 17rem;
+}
+
+.vazio{
+    height: 100vh;
+}
+
+
+
+/* ----------------- SECTION MATCH ----------------- */
+
+
+
+.match{
+    background-color: #fff;
+    height: 100%;
+    border-top: 4rem solid var(--color-purple);
+}
+
+.match h2{
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.grid-imagem-pet{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 3rem;
+    padding: 4rem;
+}
+
+.imagem-pet{
+    width: 20rem;
+    height: 40rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem 1rem var(--color-purple);
+}
+
+.imagem-pet img{
+    width: 100%;
+    height: 70%;
+    border-radius: 1rem;
+}
+
+.div-nome-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    padding: 2rem;
+}
+
+.nome-pet{
+    color: var(--color-purple);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.descricao-pet{
+    border:none;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-purple);
+}
+
+/* início da div individual de cada pet */
+
+.pet-beto{
+    
+}
+.pet-tonho{
+    
+}
+.pet-amora{
+    
+}
+.pet-robert{
+    
+}
+.pet-sol{
+    
+}
+.pets-kevin-roger{
+
+}
+
+/* fim da div individual de cada pet */
+
+
+
+
+
+/* ----------------- SECTION SOBRE ----------------- */
+
+
+
+.sobre{
+    background-color: var(--color-yellow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto-sobre{
+    height: 30%;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.texto-sobre h2{
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    }
+
+.texto-sobre p{
+    color: var(--color-purple);
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* início do mapa do Google Maps*/
+
+
+.sobre img{
+    width: 27rem;
+    height: 30%;
+    margin: auto;
+}
+
+iframe{
+    width: 100%;
+}
+
+/* fim do mapa do Google Maps*/
+
+
+
+
+/* ----------------- SECTION CONTATO ----------------- */
+
+
+.contato{
+    background-color: white;
+    height: 100%;
+}
+
+.contato h2 {
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.form-contato-img {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: .1rem .1rem 1rem #696969;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+form label {
+    margin: 1rem;
+}
+
+form input {
+    border: none;
+    border-bottom: 1.5px solid var(--color-purple);
+    border-radius: 5%;
+    margin: 1rem;
+}
+
+.form-contato-img img {
+    width: 100%;
+}
+
+.div-buttons-contato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn-contato-enviar {
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+}
+
+.btn-contato-limpar {
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+}
+
+
+
+
+/* ----------------------- FOOTER ------------------------------------------------------------- */
+
+
+/* ----------------- SECTION CONTATO ----------------- */
+
+
+footer {
+    background-color: var(--color-purple);
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.footer-menu-link {
+    color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+    font-size: 1.6rem;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: column;
+    padding: .4rem;
+    font-size: 1.6rem;
+}
+
+.redes-sociais-site {
+    color: rgba(255, 255, 255, 0.582);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .4rem;
+    font-size: 1.6rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.redes-sociais-site img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 1rem;
+}
+
+
+
+
+
 /* .img-cachorro{
     width: 100%;
     height: 67.6vh;
