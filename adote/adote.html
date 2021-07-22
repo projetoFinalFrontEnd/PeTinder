@@ -37,21 +37,22 @@
         </div>
     </header>
     <!--Formulário-->
+    <!-- LEMBRAR DE INSERIR A FONTE DA LETRA CONFORME O INDEX -->
     <div class="formulario-adocao">
         <h1>Finalize sua Adoção</h1>
         <form action="">
             <!--Usuário-->
-            <div>
+            <div class='form-login'>
                 <label for="usuário">Usuário</label>
                 <input type="text" id="usuário" maxlength="40" name="usuário" placeholder="Digite o e-mail cadastrado">
             </div>
             <!--senha-->
-            <div>
+            <div class='form-login'>
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" minlength="8" maxlength="15" name="senha" placeholder="Digite sua senha">
             </div>
             <!--Nome do animal que quer adotar-->
-            <div>
+            <div class='friend-choice'>
                 <label>Seu novo amigo!</label>
                 <select name="novoAmigo" id="novoAmigo">
                     <option selected disabled value="">Selecione</option>
@@ -64,7 +65,7 @@
                 </select>
             </div>
             <!--telada ou não?-->
-            <div>
+            <div class='questions'>
                 <h3>Casa telada?</h3>
                 <input type="radio" id="Sim" name="telada" value="Sim">
                 <label for="Sim">Sim</label>
@@ -72,7 +73,7 @@
                 <label for="Não">Não</label>
             </div>
             <!--Tem outros animais?-->
-            <div>
+            <div class='questions'>
                 <h3>Tem outros animais?</h3>
                 <input type="radio" id="Sim2" name="animais" value="Sim">
                 <label for="Sim2">Sim</label>
@@ -81,8 +82,8 @@
             </div>
             <!--Botões-->
             <div>
-                <input type="submit" value="Adotar">
-                <input type="reset" value="Cancelar">
+                <input class= 'bottom-adocao' type="submit" value="Adotar">
+                <input class= 'bottom-cancel' type="reset" value="Cancelar">
             </div>
         </form>
     </div>
