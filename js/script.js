@@ -160,4 +160,5 @@ document.querySelector('#checkbox-menu-lateral').checked = false;
 });
     
 
+
 document.querySelector('#link-nav').addEventListener('click', ()=> document.querySelector('.nav-ul').classList.toggle('modal-nav-li'))
