@@ -22,7 +22,7 @@ html{
 
 header{
     padding: 3rem;
-    background-color: rgb(235, 219, 217);
+    background-color: var(--color-yellow);
     width: 100%;
     display: flex;
     align-items: center;
@@ -81,7 +81,6 @@ header{
 
 }
 
-
 .nav-menu-lateral ul li:active{
     background-color: rgb(71, 185, 189);
 }
@@ -115,7 +114,7 @@ header{
 .foto-perfil{
     width: 3rem;
     height: 3rem;
-    border: 1px solid rgba(37, 42, 42, 0.432);
+    border: 0.1rem solid rgba(37, 42, 42, 0.432);
     border-radius: 50%;
 }
 
@@ -169,9 +168,8 @@ header{
     flex-direction: column;
     gap: 1.5rem;
     flex-wrap: wrap;
-    border: 10px solid pink;
+    /* border: 1rem solid #D8BFD8; */
     padding: 7rem;
-    margin-top: 1rem; /*20 pra cima e pra baixo e automatico pros lado, o auto centralizou */
 }
 
 .formulario-adocao h1 {
@@ -188,8 +186,9 @@ header{
 
 .form-login input {
     border: none;
-    border-bottom: 1.5px solid var(--color-purple);
-    
+    border-bottom: 0.15rem solid var(--color-purple);
+    outline-style: none;
+    color: var(--color-purple);
 }
 
 .formulario-adocao form{
@@ -218,6 +217,7 @@ header{
 }
 
 .friend-choice select {
+    color: var(--color-purple);
     border: solid .1rem var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -233,52 +233,35 @@ header{
 .questions {
     color: var(--color-purple);
     text-decoration: none;
-
 }
-
-
-/* .questions input {
-    margin: .3rem;
-    font-size
-    background-color: red;
-} */
-
-/*.questions input[type='radio'] + label::before {
-    background-color: red;
-    color: red;
-    
-    text-decoration: none;
-}*/
-
-/* Esther acrescentou, precisam conferir*/
 
 .questions input {
     display: none;
 }
+
 .questions input + label:before{
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
     border-radius: 50%;
     background-color: white;
-    border: 1px solid gray;
+    border: 0.1rem solid gray;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 2px;
-    margin-bottom: 3px;
+    margin-right: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 
 .questions input:checked + label:before{
     background-color: white;
     box-sizing: border-box;
-    border: 5px solid rgb(93, 74, 166);
-    padding: 4px;
+    border: 0.5rem solid rgb(93, 74, 166);
+    padding: 0.4rem;
 }
-/* fim do que Esther acrescentou*/
 
 .bottom-adocao {
     background-color: var(--color-purple);
-    border: 1px solid var(--color-purple);
+    border: 0.1rem solid var(--color-purple);
     border-radius:2rem;
     color: white;
     padding: 1rem;
@@ -286,13 +269,27 @@ header{
     width: 10rem;
 }
 
+.bottom-adocao:active,
+.bottom-cancel:active {
+    transform: scale(0.9);
+    transition: .8s;
+    opacity: .8;
+}
+
+.bottom-adocao:active {
+    color: var(--color-yellow);
+}
+
+.bottom-cancel:active {
+    color: var(--color-red);
+}
+
 /* TRANSIÇÃO DOS BOTÕES */
 
 .bottom-cancel {
     background-color: white;
     border-bottom: none;
-    border: 1px solid var(--color-purple);
-    
+    border: 0.1rem solid var(--color-purple);
     border-radius: 2rem;
     color: var(--color-purple);
     padding: 1rem;
