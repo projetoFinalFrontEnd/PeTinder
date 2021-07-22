@@ -255,8 +255,9 @@ header{
     padding: 1rem;
     margin: 1rem;
     width: 10rem;
-
 }
+
+/* TRANSIÇÃO DOS BOTÕES */
 
 .bottom-cancel {
     background-color: white;
