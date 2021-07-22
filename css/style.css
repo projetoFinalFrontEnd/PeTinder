@@ -49,6 +49,12 @@ header{
     animation: labelMenuNoChecked .5s;
 }
 
+.label-menu img{
+    width: 4rem;
+    padding-top: 2rem;
+}
+
+
 @keyframes labelMenuNoChecked {
     20%{
         transform:translateX(-50rem);
@@ -103,7 +109,7 @@ header{
 
 .link-nav{
     padding: 0 7rem;
-    color: #fff;
+    color: var(--color-purple);
     line-height: 6rem;
     font-size: 1.6rem;
     width: 100%;
@@ -119,10 +125,8 @@ header{
     height: 8rem;
     padding: 0 6rem 0 5rem;
     align-items: center;
-    margin-top: 5.9rem;
+    margin-top: 7.5rem;
     background-color: var(--color-purple);
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
     border-radius: 5% / 1rem;
     /* border-bottom: .2rem solid #fff; */
     margin-left: -100%;
@@ -233,12 +237,6 @@ header{
 /* Fim dos estilos aplicados quando o checkbox estiver ativo */
 
 
-/* ----------------- LOGIN ----------------- */
-
-.login{
-    background-color: rgb(220, 61, 251);
-    height: 100vh;
-}
 
 /* ----------------- CADASTRO ----------------- */
 
@@ -250,7 +248,34 @@ header{
 
 /* ----------------------- MAIN ------------------------------------------------------------- */
 
+/* ----------------- ROLAGEM BACK TO TOP ----------------- */
 
+#rolagem-menu-superior a img{
+        position: fixed;
+        width: 4rem;
+        height: 7rem;
+        left: 1rem;
+        bottom: 1rem;
+        z-index: 2;
+        animation: rolagem 2s infinite;
+        opacity: .7;
+        
+}
+
+@keyframes rolagem {
+    10%{
+        transform:translateY(-5%);
+    }
+
+    40%{
+        transform:translateY(-10%);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+    
+}
 /* ----------------- SECTION HOME ----------------- */
 
 .home{
@@ -260,7 +285,7 @@ header{
     padding-top: 10rem;
     position:absolute;
     top: 0;
-    z-index: 0;
+    z-index: 2;
 }
 
 .div-imgs-home-logo{
@@ -281,8 +306,8 @@ header{
     
 }
 .div-imgs-home-logo img{
-    width: 11rem;
-    height: 11rem;
+    width: 20rem;
+    height: 6rem;
 
 }
 .div-imgs-home-logo h1{
@@ -423,9 +448,6 @@ header{
 }
 .modal-pet-beto img{
     width: 100%;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50% -50%); */
     height: 50vh;
 }
 
@@ -490,21 +512,21 @@ header{
     margin-right: 2rem;
     cursor: pointer;
 }
-
-.btn-adotar:hover{
+/* 
+.btn-adotar a:hover{
     background-color: transparent;
     border: 1px solid var(--color-red);
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
-}
+} */
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
-
-.btn-adotar{
+/* 
+.btn-adotar a{
     border: 1px solid var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -514,7 +536,8 @@ header{
     border: 1px solid var(--color-red);
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
-}
+    
+} */
 
 .btn-home-match{
     background-color: #fff;
@@ -619,15 +642,15 @@ header{
     margin-right: 2rem;
     cursor: pointer;
 }
-
-.btn-adotar:hover{
+/* 
+.btn-adotar a:hover{
     background-color: transparent;
     border: 1px solid var(--color-red);
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
-}
+} */
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
@@ -755,14 +778,13 @@ header{
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
-
 }
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
-
-.btn-adotar{
+/* 
+.btn-adotar a{
     border: 1px solid var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -772,14 +794,14 @@ header{
     border: 1px solid var(--color-red);
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
-}
+} */
 
 .btn-home-match{
     background-color: #fff;
     border: none;
     cursor: pointer;
 }
-.modal-pet-amora .div-btn-adotar{
+.modal-pet-amora .div-btn-adotar {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -880,21 +902,21 @@ header{
     margin-right: 2rem;
     cursor: pointer;
 }
-
-.btn-adotar:hover{
+/* 
+.btn-adotar a:hover{
     background-color: transparent;
     border: 1px solid var(--color-red);
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
-}
+} */
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
-
-.btn-adotar{
+/* 
+.btn-adotar a{
     border: 1px solid var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -904,7 +926,7 @@ header{
     border: 1px solid var(--color-red);
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
-}
+} */
 
 .btn-home-match{
     background-color: #fff;
@@ -1010,21 +1032,21 @@ header{
     margin-right: 2rem;
     cursor: pointer;
 }
-
-.btn-adotar:hover{
+/* 
+.btn-adotar a:hover{
     background-color: transparent;
     border: 1px solid var(--color-red);
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
-}
+} */
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
-
-.btn-adotar{
+/* 
+.btn-adotar a{
     border: 1px solid var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -1034,7 +1056,7 @@ header{
     border: 1px solid var(--color-red);
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
-}
+} */
 
 .btn-home-match{
     background-color: #fff;
@@ -1140,21 +1162,21 @@ header{
     margin-right: 2rem;
     cursor: pointer;
 }
-
-.btn-adotar:hover{
+/* 
+.btn-adotar a:hover{
     background-color: transparent;
     border: 1px solid var(--color-red);
     color: var(--color-red);
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 
-}
+} */
 .btn-veroutro:hover{
     transform: scale(1.1);
     transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
-
-.btn-adotar{
+/* 
+.btn-adotar a{
     border: 1px solid var(--color-purple);
     border-radius: 2rem;
     padding: 1rem;
@@ -1164,7 +1186,7 @@ header{
     border: 1px solid var(--color-red);
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
-}
+} */
 
 .btn-home-match{
     background-color: #fff;
@@ -1250,27 +1272,44 @@ iframe{
 
 .contato{
     background-color: white;
-    height: 100vh;
+    height: 100%;
+    
 }
 
-.contato h2 {
+.div-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.div-contato h2 {
     color: var(--color-purple);
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-top: 3rem;
+}
+
+.div-contato p {
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 .form-contato-img {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin: auto;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: .1rem .1rem 1rem #696969;
     gap: 3rem;
-    margin: 2rem;
+    height: 50vh;
 }
+
 
 form {
     display: flex;
@@ -1278,6 +1317,7 @@ form {
     color: var(--color-purple);
     font-weight: bold;
     font-size: 1.6rem;
+    padding-top: 2rem;
 }
 
 form label {
@@ -1293,13 +1333,21 @@ form input {
 
 .form-contato-img img {
     width: 100%;
+    height: 60%;
+    
+}
+.form-contato-img {
+    width: 75%;
+    height: 50rem;
+    
 }
 
-.div-buttons-contato {
+.div-buttons-contato{
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .btn-contato-enviar {
@@ -1378,3 +1426,120 @@ footer {
 
 
 
+
+/* ----------------- LOGIN ----------------- */
+
+.login{
+    background-color: rgb(220, 61, 251);
+    height: 100vh;
+    
+}
+
+.nav-li5 div{
+    display: none;
+    
+}
+
+
+.modal-nav-li .nav-li1{
+    height: 1rem;
+}
+.modal-nav-li .nav-li1 a{
+    display: block;
+    text-indent: -9999px;
+}
+.modal-nav-li .nav-li2{
+    height: 1rem;
+
+}
+.modal-nav-li .nav-li2 a{
+    display: block;
+    height: 1rem;
+    text-indent: -9999px;
+}
+.modal-nav-li .nav-li3{
+    height: 1rem
+}
+.modal-nav-li .nav-li3 a{
+    display: block;
+    height: 1rem;
+    text-indent: -9999px;
+}
+.modal-nav-li .nav-li4{
+    height: 1rem
+}
+.modal-nav-li .nav-li4 a{
+    display: block;
+    height: 1rem;
+    text-indent: -9999px;
+}
+
+ul{
+    transition: height 2s, width 2s;
+}
+.modal-nav-li .nav-li5{
+    height: 40rem;
+    width: 123%;
+}
+.modal-nav-li .nav-li5 div{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    
+}
+
+.modal-nav-li .nav-li5 div label{
+    margin: 1rem;
+    color: var(--color-purple);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.modal-nav-li .nav-li5 div input{
+    border: none;
+    border-bottom: 1.5px solid var(--color-purple);
+    border-radius: 5%;
+    /* margin: 1rem; */
+    padding: 1.2rem;
+}
+.modal-nav-li .nav-li5 div div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor:pointer;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.modal-nav-li .nav-li5 div div .btn-login-entrar{
+    background-color: var(--color-purple);
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    cursor:pointer;
+}
+.modal-nav-li .nav-li5 div div .btn-esqueci-senha{
+    background-color: transparent;
+    border: 1px solid var(--color-purple);
+    border-radius: 2rem;
+    color: var(--color-purple);
+    padding: 1rem;
+    margin: 1rem;
+    width: 20rem;
+    cursor:pointer;
+}
+
+.modal-nav-li .nav-li6{
+    height: 1rem
+}
+.modal-nav-li .nav-li6 a{
+    display: block;
+    height: 1rem;
+    text-indent: -9999px;
+}

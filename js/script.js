@@ -131,3 +131,33 @@ $btnAbreModalKevinRoger.addEventListener('click', abreModalKevinRoger)
 $btnVerOutroKevinRoger.addEventListener('click', fechaModalKevinRoger)
 
 // -----------------------------------------------
+
+
+
+function irParaAdotar(){
+    window.open('../adote/adote.html', '_blank')
+}
+
+
+document.querySelector('#home').addEventListener('click', () => {
+document.querySelector('#checkbox-menu-lateral').checked = false;
+});
+
+document.querySelector('#match').addEventListener('click', () => {
+document.querySelector('#checkbox-menu-lateral').checked = false;
+});
+
+document.querySelector('#sobre').addEventListener('click', () => {
+document.querySelector('#checkbox-menu-lateral').checked = false;
+});
+
+document.querySelector('#contato').addEventListener('click', () => {
+document.querySelector('#checkbox-menu-lateral').checked = false;
+});
+
+document.querySelector('footer').addEventListener('click', () => {
+document.querySelector('#checkbox-menu-lateral').checked = false;
+});
+    
+
+document.querySelector('#link-nav').addEventListener('click', ()=> document.querySelector('.nav-ul').classList.toggle('modal-nav-li'))

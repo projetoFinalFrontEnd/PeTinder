@@ -27,6 +27,7 @@ header{
     display: flex;
     align-items: center;
     position: absolute;
+    top: 0;
     z-index: 3;
 }
 
@@ -172,6 +173,7 @@ header{
     border: 10px solid pink;
     padding: 7rem;
     margin-top: 1rem; /*20 pra cima e pra baixo e automatico pros lado, o auto centralizou */
+    height: 100vh;
 }
 
 .formulario-adocao h1 {

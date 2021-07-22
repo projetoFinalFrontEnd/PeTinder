@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login/css/stylecad.css">
+    <!--Google Fontes-->
+    <!--Favicon-->
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--5 itens do nav barra-->
+    <header>
+        <input type="checkbox" id='checkbox-menu-lateral'>
+        <label class='label-menu' for="checkbox-menu-lateral"><img src="./imgs/menu_black_24dp (1).svg" alt=""></label>
+        <div class='menu-lateral'>
+            <nav class='nav-menu-lateral'>
+                <div class='div-imagem-perfil'>
+                    <img class='foto-perfil' src="" alt="foto-perfil">
+                    <span class='nome-usuario'>Nome do usuário</span>
+                </div>
+                <ul>
+                    <li class='nav-li1'><a class='link-nav' href="#home">Home</a></li>
+                    <li class='nav-li2'><a class='link-nav' href="#match">Match</a></li>
+                    <li class='nav-li3'><a class='link-nav' href="#sobre">Sobre</a></li>
+                    <li class='nav-li4'><a class='link-nav' href="#contato">Contato</a></li>
+                    <li class='nav-li5'><a class='link-nav' href="#login">Login</a></li>
+                    <li class='nav-li6'><a class='link-nav' href="#cadastro">Cadastre-se</a></li>
+                </ul>
+                <!-- <img class='nav-imagem-pets' src="./imgs/pngwing.com (1).png" alt=""> -->
+                <div class='div-imagem-pets-logo'>
+                    <img class='nav-imagem-pets' src="./imgs/pngwing.com.png" alt="">
+                    <img class='nav-imagem-logo' src="./imgs/footer/logoFooter270x74px.png" alt="" class="footer-logo">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Formulário-->
+    <form action="">
+        <h1>Cadastre-se</h1>
+        <!--Nome-->
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" maxlength="40" name="nome" placeholder="Digite seu nome completo">
+        </div>
+        <!--e-mail-->
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" maxlength="30" name="email" placeholder="contato@email.com">
+        </div>
+        <!--senha-->
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" minlength="8" maxlength="15" name="senha" placeholder="Digite sua senha">
+        </div>
+        <!--telefone-->
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" minlength="11" maxlength="11" name="telefone" placeholder="(xx)xxxxx-xxxx">
+        </div>
+        <!--CPF-->
+        <div>
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" minlength="11" maxlength="11" name="cpf" placeholder="Apenas números">
+        </div>
+        <!--endereço-->
+        <div>
+            <label for="endereço">Endereço</label>
+            <input type="text" id="endereço" maxlength="100" name="endereço" placeholder="Digite o endereço completo">
+        </div>
+        <!--cão ou gato?-->
+        <div>
+            <label for="animal1">Cachorro</label>
+            <input type="checkbox"  id="animal1" name="animal1" value="Cachorro">
+            <label for="animal2">Gato</label>
+            <input type="checkbox" id="animal2" name="animal2" value="Gato">
+        </div>
+        <!--Botões-->
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="cancelar">
+        </div>
+    </form>
+    <footer>
+        <div class='footer-copyright'>
+            <div>
+                <img src="./imgs/footer/logoFooter270x74px.png" alt="" class="footer-logo">
+            </div>
+            <p>Copyright 2021 • Petinder.com.br • Todos os direitos reservados.</p>
+        </div>
+        <div class=redes-sociais-site>
+            <img src="./imgs/footer/icon-Face-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-insta-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-twitter-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-yt-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-tel-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-whats-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-map-28x28px.png" alt="">
+            <img src="./imgs/footer/icon-mail-28x28px.png" alt="">
+            <p>www.petinder.com.br</p>
+        </div>
+    </footer>
+</body>
+</html>
