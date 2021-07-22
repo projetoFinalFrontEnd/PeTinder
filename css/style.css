@@ -1,3 +1,6 @@
+/* ------PADRÃO FEITO PARA DISPOSITIVO MOBILE DE 320px DE LARGURA  ------ */
+
+
 /* ----------------- Scroll Smooth e Fonte Size default  ----------------- */
 
 html{
@@ -508,7 +511,7 @@ header{
     background-color: var(--color-red);
     height: 100%;
     width: 100%;
-    padding-top: 6rem;
+    padding-top: 10rem;
     position:absolute;
     top: 0;
     z-index: 0;
@@ -601,6 +604,7 @@ header{
 .grid-imagem-pet{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    justify-items: center;
     gap: 3rem;
     padding: 4rem;
 }
@@ -725,7 +729,7 @@ iframe{
 
 .contato{
     background-color: white;
-    height: 100%;
+    height: 100vh;
 }
 
 .contato h2 {
@@ -734,6 +738,7 @@ iframe{
     font-size: 3rem;
     text-align: center;
     margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 .form-contato-img {
