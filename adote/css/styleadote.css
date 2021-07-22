@@ -232,13 +232,20 @@ header{
 
 .questions {
     color: var(--color-purple);
+    text-decoration: none;
 
 }
 
-/* .questions input:checked {
-    color: var(--color-purple);
-    background-color: var(--color-purple);
+/* .questions input {
+    margin: .3rem;
+    font-size
+    background-color: red;
 } */
+
+.questions input[type='radio']::after {
+    background-color: red;
+}
+
 
 .bottom-adocao {
     background-color: var(--color-purple);
