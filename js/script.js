@@ -1,4 +1,7 @@
 
+
+
+
 const $btnAbreModalBeto = document.querySelector('#btn-abre-modal-beto')
 const $petBetoClasse = document.querySelector('#pet-beto')
 const $btnVerOutroBeto = document.querySelector('.btn-veroutro-beto')
@@ -9,7 +12,7 @@ function abreModalBeto() {
     fechaModalSol()
     fechaModalRobert()
     fechaModalKevinRoger()
-    return $petBetoClasse.classList.add('modal-pet-beto')
+    return $petBetoClasse.classList.toggle('modal-pet-beto')
 }
 
 function fechaModalBeto() {
@@ -31,7 +34,7 @@ function abreModalTonho() {
     fechaModalSol()
     fechaModalRobert()
     fechaModalKevinRoger()
-    return $petTonhoClasse.classList.add('modal-pet-tonho')
+    return $petTonhoClasse.classList.toggle('modal-pet-tonho')
 }
 
 function fechaModalTonho() {
@@ -54,7 +57,7 @@ function abreModalAmora() {
     fechaModalSol()
     fechaModalRobert()
     fechaModalKevinRoger()
-    return $petAmoraClasse.classList.add('modal-pet-amora')
+    return $petAmoraClasse.classList.toggle('modal-pet-amora')
 }
 
 function fechaModalAmora() {
@@ -76,7 +79,7 @@ function abreModalRobert() {
     fechaModalTonho()
     fechaModalSol()
     fechaModalKevinRoger()
-    return $petRobertClasse.classList.add('modal-pet-robert')
+    return $petRobertClasse.classList.toggle('modal-pet-robert')
 }
 
 function fechaModalRobert() {
@@ -98,7 +101,7 @@ function abreModalSol() {
     fechaModalTonho()
     fechaModalRobert()
     fechaModalKevinRoger()
-    return $petSolClasse.classList.add('modal-pet-sol')
+    return $petSolClasse.classList.toggle('modal-pet-sol')
 }
 
 function fechaModalSol() {
@@ -120,7 +123,7 @@ function abreModalKevinRoger() {
     fechaModalTonho()
     fechaModalSol()
     fechaModalRobert()
-    return $petKevinRogerClasse.classList.add('modal-pets-kevin-roger')
+    return $petKevinRogerClasse.classList.toggle('modal-pets-kevin-roger')
 }
 
 function fechaModalKevinRoger() {
@@ -133,7 +136,7 @@ $btnVerOutroKevinRoger.addEventListener('click', fechaModalKevinRoger)
 // -----------------------------------------------
 
 
-
+// -----------------------------------------------
 function irParaAdotar(){
     window.open('../adote/adote.html', '_blank')
 }

@@ -52,6 +52,7 @@ header{
 .label-menu img{
     width: 4rem;
     padding-top: 2rem;
+    cursor: pointer;
 }
 
 
@@ -114,7 +115,6 @@ header{
     font-size: 1.6rem;
     width: 100%;
     /* height: 100%; */
-    
 }
 
 .div-imagem-perfil{
@@ -295,6 +295,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index:2;
 
 }
 
@@ -404,6 +405,7 @@ header{
     width: 100%;
     height: 70%;
     border-radius: 1rem;
+    cursor:pointer;
 }
 
 .div-nome-button{
@@ -1565,7 +1567,18 @@ ul{
         font-size: 70%;
     }   
 
-
+    .menu-lateral {
+        position: absolute;
+        top: 0;
+        left: -88%;
+        bottom: 0;
+        background-color: var(--color-yellow);
+        height: 100vh;
+        width: 59%;
+        border-right: .2rem solid rgb(255, 255, 255);
+        transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
+        z-index: 1;
+    }
 
 /* -------- Contato -------- */  
     .contato{
@@ -1628,7 +1641,7 @@ ul{
 
 .div-imgs-home-logo img{
     width: 30rem;
-    height: 12rem;
+    height: 9rem;
 }
 .div-imgs-home-logo h1{
     font-size: 6rem;
@@ -1711,10 +1724,48 @@ display: none;
         } 
 
         .nav-menu-lateral ul li{
-            margin-top: 0;
+            margin-top: 30rem;
         
         }
 
+        .menu-lateral {
+            position: absolute;
+            top: 0;
+            left: -68%;
+            bottom: 0;
+            background-color: var(--color-yellow);
+            height: 100vh;
+            width: 46%;
+            border-right: .2rem solid rgb(255, 255, 255);
+            transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
+            z-index: 1;
+        }
+
+        .nav-menu-lateral ul li{
+            border-bottom: .2rem solid rgba(0, 0, 0, 0.233);
+            height: 5rem;
+            transition: background-color .2s, margin-top 1s;
+            margin-top: 45rem;
+        
+        }
+
+        .link-nav{
+            padding: 0 7rem;
+            color: var(--color-purple);
+            line-height: 5rem;
+            font-size: 1.6rem;
+            width: 100%;
+            /* height: 100%; */
+        }
+        
+        .nav-imagem-logo{
+            width: 60%;
+            height: 20% 
+        }
+
+        .div-imagem-pets-logo {
+            margin-top: 3rem;
+        }
 /* -------- Contato -------- */
 
         .form-contato-img {
@@ -1790,7 +1841,7 @@ display: none;
 
 .div-imgs-home-logo img{
     width: 30rem;
-    height: 12rem;
+    height: 9rem;
 
 }
 .div-imgs-home-logo h1{
@@ -1911,6 +1962,20 @@ display: none;
     height: 8rem;
     opacity: 1;
 }
+
+
+.imagem-pet:hover{
+    transform: scale(1.1);
+    transition: transform .6s;
+}
+
+.imagem-pet img{
+    opacity: .5;
+}
+.imagem-pet img:hover{
+    opacity: 1;
+;
+}
 /* -------- Sobre -------- */
 
 /* -------- Footer -------- */
@@ -1924,6 +1989,26 @@ display: none;
         html{
             font-size: 100%;
         }   
+
+
+        .nav-menu-lateral ul li{
+            margin-top: 30rem;
+        
+        }
+
+        .menu-lateral {
+            position: absolute;
+            top: 0;
+            left: -59%;
+            bottom: 0;
+            background-color: var(--color-yellow);
+            height: 100vh;
+            width: 40%;
+            border-right: .2rem solid rgb(255, 255, 255);
+            transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
+            z-index: 1;
+        }
+
 /* -------- Contato -------- */
 
         .form-contato-img {
@@ -1982,7 +2067,7 @@ display: none;
 
 .div-imgs-home-logo img{
     width: 30rem;
-    height: 12rem;
+    height: 9rem;
 }
 .div-imgs-home-logo h1{
     font-size: 4rem;
