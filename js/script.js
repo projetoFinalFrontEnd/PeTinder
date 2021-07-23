@@ -138,7 +138,7 @@ $btnVerOutroKevinRoger.addEventListener('click', fechaModalKevinRoger)
 
 // -----------------------------------------------
 function irParaAdotar(){
-    window.open('../adote/adote.html', '_blank')
+    window.open('../adote.html', '_blank')
 }
 
 

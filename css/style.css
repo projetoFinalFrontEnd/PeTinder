@@ -1846,16 +1846,13 @@ display: none;
     color: white;
 }
 
-.div-home-button{
-    margin-top: 2rem;
-    width: 60%;
+.div-home-button {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
 }
 .div-home-button button{
-    width: 70%;
-    padding: 1rem;
+    width: 15rem;
+    padding: .8rem;
     border-radius: 3rem;
     cursor: pointer;
 }
@@ -1866,6 +1863,9 @@ display: none;
     color: rgba(255, 255, 255, 0.719);
     cursor: pointer;
     font-size: 1.5rem;
+    width: 300rem;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .btn-home-match{
@@ -2071,16 +2071,13 @@ display: none;
     color: white;
 }
 
-.div-home-button{
-    margin-top: 2rem;
-    width: 60%;
+.div-home-button {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
 }
 .div-home-button button{
-    width: 70%;
-    padding: 1rem;
+    width: 15rem;
+    padding: .8rem;
     border-radius: 3rem;
     cursor: pointer;
 }
