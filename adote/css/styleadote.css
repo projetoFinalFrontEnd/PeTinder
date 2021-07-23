@@ -21,152 +21,24 @@ html{
 /* ----------------------- HEADER ------------------------------------------------------------- */
 
 header{
-    padding: 3rem;
+    padding: 2rem;
     background-color: var(--color-yellow);
     width: 100%;
     display: flex;
     align-items: center;
     position: absolute;
-    top: 0;
-    z-index: 3;
 }
 
-.label-menu{
-    position: absolute;
-    z-index: 2;
-    animation: labelMenuNoChecked .5s;
-}
-
-@keyframes labelMenuNoChecked {
-    20%{
-        transform:translateX(-50rem);
-    }
-    40%{
-        transform:translateY(-100rem);
-    }
-    60%{
-        transform:translateX(+200rem);
-    }    
-    80%{
-        transform:translateY(0);
-    }
-    100%{
-        transform:translateX(0%);
-    }
-    
-}
-
-.menu-lateral{
-    position: absolute;
-    top: 0;
-    left: -135%;
-    bottom: 0;
-    background-color: rgb(123, 218, 218);
-    height: 100vh;
-    width: 90%;
-    border-right: .2rem solid rgb(255, 255, 255); 
-    transition: transform 1s cubic-bezier(0.75,-0.23, 0.26, 1.38);
-    z-index: 1;
-}
-
-.nav-menu-lateral ul{
-    display: flex;
-    flex-direction: column;
-}
-/*Pensar nesta linha*/
-.nav-menu-lateral ul li{
-    border-bottom: .2rem solid rgba(0, 0, 0, 0.233);
-    height: 6rem;
-    transition: background-color .2s, margin-top 1s;
-    margin-top: 0rem; /*Preste atenção para mudar junto com o form*/
-
-}
-
-.nav-menu-lateral ul li:active{
-    background-color: rgb(71, 185, 189);
-}
-
-.link-nav{
-    padding: 0 7rem;
-    color: #fff;
-    line-height: 6rem;
-    font-size: 1.6rem;
-    width: 100%;
-    /* height: 100%; */
-    
-}
-
-.div-imagem-perfil{
-    display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
-    width: 100%;
-    height: 8rem;
-    padding: 0 6rem;
-    align-items: center;
-    margin-top: 5.9rem;
-    background-color: rgb(243, 144, 144);
-    border-radius: 5% / 1rem;
-    border-bottom: .2rem solid #fff;
-    margin-left: -100%;
-    transition: transform 1s ease-in-out;
-}
-
-.foto-perfil{
-    width: 3rem;
-    height: 3rem;
-    border: 0.1rem solid rgba(37, 42, 42, 0.432);
-    border-radius: 50%;
-}
-
-.nome-usuario{
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* .nav-imagem-pets{
-    display: none;
-    width: 15rem;
-    height: 27rem;
-    position: absolute;
-    right: -9.6rem;
-    top: 20rem
-} */
-
-.div-imagem-pets-logo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem 0 1rem 3rem;
-    margin-top: 3rem;
-    align-items: center;
-}
-
-.nav-imagem-pets{
-    width: 12rem;
-    height: 12rem;
-
-}
-.nav-imagem-logo{
+.header-logo {
     width: 20rem;
-    height: 7rem;
-
 }
-
-#checkbox-menu-lateral{
-    display: none;
-    
-}
-
-
 
 /* ----------------------- Corpo ------------------------------------------------------------- */
 
 form{
     padding: 2rem ;
     box-shadow: -.3rem -.3rem 1rem var(--color-purple);
+    margin-top: 5rem;
 }
 
 .formulario-adocao{
@@ -175,11 +47,7 @@ form{
     gap: 1.5rem;
     /* border: 1rem solid #D8BFD8; */
     padding: 7rem;
-<<<<<<< HEAD
-    margin-top: 1rem; /*20 pra cima e pra baixo e automatico pros lado, o auto centralizou */
     height: 100vh;
-=======
->>>>>>> 0be874fb49d450b117e14838162c5a010d02eb90
 }
 
 .formulario-adocao h1 {

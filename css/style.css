@@ -103,11 +103,6 @@ header{
 
 }
 
-
-.nav-menu-lateral ul li:active{
-    background-color: rgb(71, 185, 189);
-}
-
 .link-nav{
     padding: 0 7rem;
     color: var(--color-purple);
@@ -1341,6 +1336,8 @@ form input {
     border-bottom: 1.5px solid var(--color-purple);
     border-radius: 5%;
     margin: 1rem;
+    outline-style: none;
+    color: var(--color-purple);
 }
 
 .form-contato-img img {
