@@ -322,6 +322,7 @@ header{
     flex-direction: column;
     gap: 2rem;
 }
+
 .div-home-button button{
     width: 70%;
     padding: 1.5rem;
@@ -338,6 +339,7 @@ header{
 
 .btn-home-match{
     background-color: #fff;
+    color: var(--color-purple);
     border: none;
     cursor: pointer;
 }
@@ -493,6 +495,8 @@ header{
 .modal-pet-beto .div-nome-button p{
     opacity: 1;
     color: var(--color-purple);
+    display: flex;
+    flex-wrap: wrap;
     font-weight: 300;
     font-size: 1.3rem;
     line-height: 2rem;
@@ -548,11 +552,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 13rem;
+    height: 15rem;
     opacity: 1;
 }
-
-
 
 /* fim do modal pet Beto */
 
@@ -1542,4 +1544,8 @@ ul{
     display: block;
     height: 1rem;
     text-indent: -9999px;
+}
+
+@media (max-width: 360px) {
+
 }

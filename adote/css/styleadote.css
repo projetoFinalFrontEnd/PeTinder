@@ -164,11 +164,15 @@ header{
 
 /* ----------------------- Corpo ------------------------------------------------------------- */
 
+form{
+    padding: 2rem ;
+    box-shadow: -.3rem -.3rem 1rem var(--color-purple);
+}
+
 .formulario-adocao{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    flex-wrap: wrap;
     /* border: 1rem solid #D8BFD8; */
     padding: 7rem;
 <<<<<<< HEAD
@@ -179,7 +183,7 @@ header{
 }
 
 .formulario-adocao h1 {
-    color: var(--color-purple)
+    color: var(--color-purple);
 }
 
 .formulario-adocao h3 {
@@ -273,6 +277,18 @@ header{
     padding: 1rem;
     margin: 1rem;
     width: 10rem;
+}
+
+.bottom-adocao:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+.bottom-cancel:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
 }
 
 .bottom-adocao:active,
