@@ -42,8 +42,9 @@ header{
 }
 
 .label-menu img{
-    width: 4rem;
-    padding-top: 2rem;
+    width: 2.5rem;
+    padding-top: .5rem;
+    justify-content: center;
 }
 
 
@@ -336,6 +337,18 @@ form{
     cursor: pointer
 }
 
+.bottom-enviar:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+.bottom-cancelar:hover{
+    transform: scale(1.1);
+    transition: transform .3s cubic-bezier(0.2,-0.26, 0.93, 1.61);
+}
+
 .bottom-enviar:active,
 .bottom-cancelar:active {
     transform: scale(0.9);
@@ -346,6 +359,8 @@ form{
 .bottom-enviar:active {
     color: var(--color-yellow);
 }
+
+
 
 .bottom-cancelar:active {
     color: var(--color-red);
